@@ -9,6 +9,7 @@ st.set_page_config(
     initial_sidebar_state="collapsed"
 )
 
+# Custom CSS for better styling
 st.markdown("""
     <style>
     footer {visibility: hidden;}
@@ -16,7 +17,6 @@ st.markdown("""
     </style>
 """, unsafe_allow_html=True)
 
-# Custom CSS for better styling
 st.markdown("""
 <style>
     .main-header {
