@@ -9,14 +9,19 @@ st.set_page_config(
     initial_sidebar_state="collapsed"
 )
 
-# Custom CSS for better styling
 st.markdown("""
     <style>
+    /* Hide Streamlit footer */
     footer {visibility: hidden;}
-    .viewerBadge_container__r5tak {display: none !important;}
+
+    /* Hide GitHub viewer badge (handle any container class) */
+    [data-testid="stAppViewContainer"] > .main > div:has(> .viewerBadge_link__1S137),
+    .viewerBadge_container__r5tak,
+    .st-emotion-cache-1b4cjjp {display: none !important;}
     </style>
 """, unsafe_allow_html=True)
 
+# Custom CSS for better styling
 st.markdown("""
 <style>
     .main-header {
