@@ -9,6 +9,13 @@ st.set_page_config(
     initial_sidebar_state="collapsed"
 )
 
+st.markdown("""
+    <style>
+    footer {visibility: hidden;}
+    .viewerBadge_container__r5tak {display: none !important;}
+    </style>
+""", unsafe_allow_html=True)
+
 # Custom CSS for better styling
 st.markdown("""
 <style>
